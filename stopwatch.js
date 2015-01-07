@@ -54,7 +54,6 @@ var Stopwatch = function(elem, options) {
     function render() {
         var minutes = parseInt( clock/1000 / 60 ) % 60;
         var seconds = parseInt( clock/1000 ) % 60;
-        //var centisecond = parseInt( clock/10 ) % 100;
 
         var result = (minutes < 10 ? '0' + minutes : minutes) + ':' + (seconds  < 10 ? '0' + seconds : seconds); // + ':' + (centisecond  < 10 ? '0' + centisecond : centisecond);
 
@@ -68,9 +67,9 @@ var Stopwatch = function(elem, options) {
 };
 
 
-var sw = new Stopwatch(document.getElementById('time'), 100);
+var sw = new Stopwatch(document.getElementById('time'), { delay: 100 });
 document.getElementById('toggle').addEventListener('click', function(){
-    console.log(sw);
+    sw.stop();
     sw.reset();
     sw.start();
 });
