@@ -1,0 +1,61 @@
+html {
+    height: 100%;
+}
+body {
+    position: relative;
+    height: 100%;
+    background-color: #00897B;
+    color: #fff;
+}
+#clock-wrapper {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 40%;
+}
+#control-wrapper {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    top: 60%;
+}
+#reset {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 13px;
+    width: 42px;
+    height: 42px;
+    font-size: 42px;
+    color: #fff;
+}
+
+#toggle {
+    height: 100%;
+    border-radius: 0;
+    background-color: #009688;
+    color: #26A69A;
+    font-size: 62px;
+    font-weight: bold;
+}
+#toggle:hover {
+    background-color: #26A69A;
+    color: #4DB6AC;
+}
+#toggle:active {
+    background-color: #00897B;
+    color: #009688;
+}
+#toggle:focus {
+    outline: none;
+}
+
+#time {
+    position: absolute;
+    font-size: 120px;
+    font-weight: bold;
+    top: 50%;
+    margin-top: -60px;
+    width: 100%;
+    text-align: center;
+}
